@@ -1,0 +1,59 @@
+ Div have width 100 % and height 0 
+span have width and height both 0 at initial.
+
+UTF - 8 
+Fevicon
+meta data
+
+
+Name of class in div should be relevant. 
+The first name of class inside body is main.
+
+Camel case --> like containerBeta
+Snake case --> like container-beta
+
+
+div and span adopt the property of child. Initially it have 0 height but after entering any value it adopt the property of that child, and increase its height.
+
+by default font size is 17 px 
+
+div - block element.
+span - inline block element.
+
+***if you want to create any div with class then .container-2
+***if you want to create any div with id then #container-2 
+
+we can give id and class to any tag
+forms have attributes to
+
+When we create a input tag we also create an attribute called 'name' with value same as 'type' attribute.
+
+* check all input type
+
+--------------------------------------------------------------
+boycoy.com
+thisismagma.com
+gsap.com
+lanix
+
+---------------------------------------------------------------
+css boilerplate
+*{ 
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html , body{
+    h:100%;
+    w:100%;
+}
+---------------------------------------------------------------
+
+1. Inline css where you write attributes write style attributess
+2. Internal css inside head tag in last with <style> </style>
+3. External css inside head tag in last with <link rel="stylesheet" href="style.css">
+
+* -- universal selector, soo the properties in it applies to every element.
+
+To add comments in code use ctrl + /

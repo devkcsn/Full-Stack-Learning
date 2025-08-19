@@ -1,0 +1,46 @@
+JS BASIC NOTES
+
+- let var cons
+
+these are the keywords in which we can store any variable with its value.
+
+
+	let manish; ES6 {}	scope local
+	var manish; ES5 func	scope global
+	const manish;		scope local
+
+- What is hoisting ?
+
+let ab = 45;
+
+console.log(ab); 45
+
+todegi aise:  
+
+console log(ab);
+
+ES - ECMA Script 
+
+a is not defined is an error
+undefined is a value
+
+-- Concatenation is a kind of typecast, which says that we can write different datatype together by using '+' . 
+Eg - if we want to print a string and variable of same or different datatype as well.
+	let str = "hello" ;
+	let num = 10;
+	console.log(str + " World " + num );
+
+What is browser context API?
+its basically gives us 3 features 
+- window object
+- heap memory 
+- stack
+
+JS has mainly 2 versions a) ES5 and b) ES6
+
+----------------------------------------------------
+For loop  
+----------------------------------------------------
+for(initialization ; evaluation ; increment) {
+     execution;
+}

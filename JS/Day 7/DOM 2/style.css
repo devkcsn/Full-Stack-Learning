@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+.main{
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    height : 20rem;
+    width : 40rem;
+    background-color: black;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+.circle{
+    width: 10rem;
+    height:10rem;
+    border-radius:50% ;
+    background-color: yellow;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+}
+
+button{
+    height: 2rem;
+    width: 4rem;
+    border-radius: 10px;
+    border: none;
+}
+#ON {
+    position: absolute;
+    top: 75%;
+    left: 29%;
+}
+#OFF {
+    position: absolute;
+    top: 75%;
+    left: 66.8%;
+}

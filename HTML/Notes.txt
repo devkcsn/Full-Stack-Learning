@@ -1,0 +1,31 @@
+Div have width 100 % and height 0 
+span have width and height both 0 at initial.
+
+UTF - 8 
+Fevicon
+meta data
+
+
+Name of class in div should be erelevant. 
+The first name of class inside body is main.
+
+Camel case --> like containerBeta
+Snake case --> like container-beta
+
+
+div and span adopt the property of child. Initially it have 0 height but after entering any value it adopt the property of that child, and increase its height.
+
+by default font size is 17 px 
+
+div - block element.
+span - inline block element.
+
+if you want to create any div with class then .container-2
+if you want to create any div with id then #container-2 
+
+we can give id and class to any tag
+forms have attributes to
+
+When we create a input tag we also create an attributte called 'name' with value same as 'type' attribute.
+
+check all input type    

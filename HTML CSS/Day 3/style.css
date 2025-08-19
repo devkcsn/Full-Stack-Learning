@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+}
+
+.box {
+    height: 350px;
+    width: 350px;
+    /* border: 1px solid black; */
+    background-color: rgb(220, 220, 42);
+    /* padding: 100px; */
+}
+
+.box-child {
+    height: 87px;
+    width: 84px;
+    background-color: aqua;
+    /* position: absolute; */
+}
+
+.box-child2 {
+    height: 87px;
+    width: 84px;
+    background-color: rgb(255, 0, 242);
+
+}
+
+.box-child3 {
+    height: 87px;
+    width: 84px;
+    background-color: rgb(255, 64, 0);
+}

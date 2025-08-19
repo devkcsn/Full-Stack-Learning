@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+@font-face {
+    font-family: 'Instagram Sans';
+    src: url('path/to/instagram-sans-regular.woff2') format('woff2'),
+         url('path/to/instagram-sans-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.instagram-text {
+    font-family: 'Instagram Sans', sans-serif;
+}
+
+.main{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.container{
+    height: 70%;
+    width: 30%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%); 
+}
+.upper-box {
+    height: 4rem;
+    position: relative;
+}
+
+.profile-picture{
+    height: 80%;
+    width: 3.2rem;
+    border-radius: 50%;
+    position: absolute;
+    left: 8px;
+    top: 3px;
+    overflow: hidden;
+}
+
+.profile-picture img{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+
+.user-name {
+    position: absolute;
+    left: 4.4rem;
+    top: 8px;
+    font-weight: bold;
+}
+.location-name{
+    position:absolute;
+    left: 4.4rem;
+    top: 27px;
+    font-size: small;
+
+}
+
+#three-dot-p{
+    font-size: xx-large;
+    position: absolute; 
+    left: 26.2rem;
+    top: 5px;
+}
+
+.middle-box{
+    height: 27rem;
+    position: relative;
+}
+.middle-box img{
+    height: 100%;
+    width: 100%;
+}
+.lower-box{
+    height: 3.8rem;
+}
+.icons{
+    font-size: xx-large;
+    font-weight: lighter;
+}
+#floating-like{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: red;
+    font-size: 9rem;
+    opacity: 0.0;
+    transition: all 0.3s ease-in-out;
+    pointer-events: none;
+}
+ 

@@ -1,0 +1,15 @@
+alt + shift + F -- Formatting
+alt + l + c -- Close Live server
+alt + l + o -- Open Live Server
+
+image is self closing tag
+
+br is use for line break in paragraph and headings
+
+tag don't take block space
+
+anything inside tag is wrapper
+
+
+things inside double quotes is attribute and rest outside double quotes is property 
+like src = "" is an attribute but video playback control loop is a property.
