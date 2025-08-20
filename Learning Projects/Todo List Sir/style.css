@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #f8e4e4;
+}
+
+Main {
+    height: 100%;
+    width: 100%;
+}
+
+nav {
+    height: 15%;
+    width: 100%;
+    background-color: rgb(149, 149, 149);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.filter-container {
+    height: 80%;
+    width: 40%;
+    border: 1px solid black;
+    display: flex;
+    background-color: #dadada;
+}
+
+.filter {
+    height: 100%;
+    width: 25%;
+    border-right: 0.5px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filter:hover {
+    background-color: rgb(149, 149, 149);
+}
+
+.filter-color {
+    height: 30%;
+    width: 25%;
+    border: 1px solid black;
+}
+
+
+.action-btn-container {
+    height: 80%;
+    width: 20%;
+    display: flex;
+    background-color: #dadada;
+}
+
+.add,
+.delete {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8vh;
+    border: 1px solid black;
+}
+
+.add:hover {
+    background-color: rgb(149, 149, 149);
+}
+
+.delete:hover {
+    background-color: rgb(149, 149, 149);
+}
+
+.lower-main {
+    height: 85%;
+    width: 100%;
+    position: relative;
+    padding: 1rem 2rem;
+}
+
+.modal-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 60%;
+    width: 40%;
+    background-color: darkgrey;
+    display: flex;
+}
+
+.modal-writing-area {
+    height: 100%;
+    width: 70%;
+    border: 1px solid #4c4b4b;
+}
+
+.modal-filter-container {
+    height: 100%;
+    width: 30%;
+    border-left: 1px solid #4c4b4b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #dadada;
+}
+
+.modal-filter {
+    height: 25%;
+    width: 100%;
+    border: 1px solid #4c4b4b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-filter:hover {
+    background-color: rgb(149, 149, 149);
+}
+
+
+.modal-filter-color {
+    height: 30%;
+    width: 25%;
+    border: 1px solid black;
+}
+
+.modal-filter-color:hover {
+    background-color: blue;
+}
+
+.ticket {
+    height: 40vh;
+    width: 20vw;
+    background-color: rgb(149, 149, 149);
+    padding: 0 1rem;
+}
+
+.ticket-info {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ticket-id {
+    font-size: 3vh;
+}
+
+.ticket-color {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background-color: aqua;
+}
+
+.ticket-text-area {
+    height: 70%;
+    width: 100%;
+}
