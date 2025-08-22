@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <h1>Expense Tracker</h1>
+    </nav>
+    <div class="container">
+        <div class="form">
+            <form action="">
+                <input type="text" placeholder="Expense" id="expense-name">
+                <input type="number" min="0" placeholder="₹ Amount" id="amount">
+                <select name="Category" id="Category">
+                    <option value="" disabled selected>Select Category</option>
+                    <option value="food">Food</option>
+                    <option value="travel">Travel</option>
+                    <option value="rent">Rent</option>
+                    <option value="emis">EMIs</option>
+                    <option value="shopping">Shopping</option>
+                    <option value="others">Others</option>
+                </select>
+                <button type="button" id="submit">Submit</button>
+                <button type="button" id="clear-data" style="background: #ff4444; margin-top: 10px;">Clear All
+                    Data</button>
+            </form>
+            <div class="expenses-salary-container">
+                <div class="total-expenses">
+                    <div class="label">Total Expenses</div>
+                    <div class="amount">₹0</div>
+                </div>
+                <div class="Salary">
+                    <div class="label">Monthly Salary</div>
+                    <div class="amount">₹0</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container2">
+        <div class="expense">
+            <h3>Expense List</h3>
+            <div class="expense-list" id="expense-list">
+
+            </div>
+        </div>
+        <div class="chart">
+            <h3>Category Breakdown</h3>
+            <div class="chart-container">
+                <div class="circle-chart" id="circle-chart">
+                </div>
+                <div class="chart-cat">
+                    <div class="cat-item">
+                        <span class="cat-color food"></span>
+                        <span class="cat-text">Food</span>
+                    </div>
+                    <div class="cat-item">
+                        <span class="cat-color travel"></span>
+                        <span class="cat-text">Travel</span>
+                    </div>
+                    <div class="cat-item">
+                        <span class="cat-color rent"></span>
+                        <span class="cat-text">Rent</span>
+                    </div>
+                    <div class="cat-item">
+                        <span class="cat-color emis"></span>
+                        <span class="cat-text">EMIs</span>
+                    </div>
+                    <div class="cat-item">
+                        <span class="cat-color shopping"></span>
+                        <span class="cat-text">Shopping</span>
+                    </div>
+                    <div class="cat-item">
+                        <span class="cat-color others"></span>
+                        <span class="cat-text">Others</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

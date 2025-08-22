@@ -1,0 +1,395 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Arial', sans-serif;
+    color: #e0e0e0;
+    background: linear-gradient(135deg, #2d1b4e 0%, #1a0f2e 50%, #0f0518 100%);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+nav {
+    background: rgba(45, 27, 78, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 1rem 2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.logo h1 {
+    color: #f0f0f0;
+    font-size: 1.8rem;
+    font-weight: normal;
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    gap: 5rem;
+}
+
+
+.form {
+    background: rgba(45, 27, 78, 0.6);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    height: 70vh;
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form input,
+.form select {
+    padding: 0.875rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(26, 15, 46, 0.7);
+    color: #e0e0e0;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+
+.form input:focus,
+.form select:focus {
+    outline: none;
+    border-color: rgba(255, 255, 255, 0.4);
+    background: rgba(26, 15, 46, 0.9);
+}
+
+.form button {
+    padding: 0.875rem;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    border: 0px;
+    font-size: 1rem;
+    border-radius: 10px;
+
+}
+
+.form button:hover {
+    background: #b4afaf;
+}
+
+
+.total-expenses,
+.Salary {
+    background: rgba(45, 27, 78, 0.6);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #e0e0e0;
+    flex: 1;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.total-expenses:hover,
+.Salary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.total-expenses::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #ff6b6b, #ee5a52);
+}
+
+.Salary::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #4ecdc4, #44b3aa);
+}
+
+.total-expenses .label,
+.Salary .label {
+    font-size: 0.9rem;
+    color: #bbb;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.total-expenses .amount,
+.Salary .amount {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.expenses-salary-container {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+/* Container2 - Expense List and Chart */
+.container2 {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.expense,
+.chart {
+    background: rgba(45, 27, 78, 0.6);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    height: 70vh;
+}
+
+.expense h3,
+.chart h3 {
+    color: #ccc;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.expense-list {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.expense-list:empty::after {
+    content: "No expenses added yet. Add your first expense above!";
+    display: block;
+    text-align: center;
+    color: #999;
+    font-style: italic;
+    padding: 2rem;
+    background: rgba(26, 15, 46, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+.chart-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.circle-chart {
+    width: 200px;
+    height: 200px;
+    background: conic-gradient(#ff6b6b 0deg 60deg,
+            #4ecdc4 60deg 120deg,
+            #45b7d1 120deg 180deg,
+            #f9ca24 180deg 240deg,
+            #f0932b 240deg 300deg,
+            #6c5ce7 300deg 360deg);
+    position: relative;
+    margin-bottom: 1rem;
+    border: 1px solid #666;
+    border-radius: 50%;
+}
+
+.circle-chart::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    height: 60%;
+    background: rgba(45, 27, 78, 0.9);
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+.chart-cat {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.8rem;
+    width: 100%;
+}
+
+.cat-item {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 0.9rem;
+    padding: 0.5rem;
+    background: rgba(26, 15, 46, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.cat-color {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    border-radius: 50%;
+}
+
+.cat-color.food {
+    background-color: #ff6b6b;
+}
+
+.cat-color.travel {
+    background-color: #4ecdc4;
+}
+
+.cat-color.rent {
+    background-color: #45b7d1;
+}
+
+.cat-color.emis {
+    background-color: #f9ca24;
+}
+
+.cat-color.shopping {
+    background-color: #f0932b;
+}
+
+.cat-color.others {
+    background-color: #6c5ce7;
+}
+
+.cat-text {
+    color: #ccc;
+    font-weight: normal;
+}
+
+@media (max-width: 1024px) {
+
+    .container,
+    .container2 {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .logo h1 {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        padding: 1rem;
+    }
+
+    .logo h1 {
+        font-size: 1.4rem;
+    }
+
+    .container,
+    .container2 {
+        margin: 1rem auto;
+        padding: 0 0.5rem;
+    }
+
+    .form,
+    .expense,
+    .chart {
+        padding: 1.5rem;
+    }
+
+    .expenses-salary-container {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .total-expenses,
+    .Salary {
+        height: 100px;
+        padding: 1.2rem;
+    }
+
+    .total-expenses .amount,
+    .Salary .amount {
+        font-size: 1.2rem;
+    }
+
+    .circle-chart {
+        width: 150px;
+        height: 150px;
+    }
+
+    .chart-cat {
+        grid-template-columns: 1fr;
+        gap: 0.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .form input,
+    .form select,
+    .form button {
+        padding: 0.75rem;
+        font-size: 0.9rem;
+    }
+
+    .expense h3,
+    .chart h3 {
+        font-size: 1.1rem;
+    }
+
+    .total-expenses,
+    .Salary {
+        padding: 0.8rem;
+        height: 80px;
+    }
+
+    .total-expenses .label,
+    .Salary .label {
+        font-size: 0.8rem;
+    }
+
+    .total-expenses .amount,
+    .Salary .amount {
+        font-size: 1rem;
+    }
+
+    .circle-chart {
+        width: 120px;
+        height: 120px;
+    }
+}
