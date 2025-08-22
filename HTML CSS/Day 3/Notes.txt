@@ -1,0 +1,50 @@
+Units of CSS
+
+px - pixel (1920*1080)
+
+16 px = 1 rem (widely used)
+percentage (widely used)
+
+
+viewport -- How much things is seen at a capture (when seen is open how much site is visible)
+
+vh - viewport height (widely used) --> The height visible in the screen.
+vw - viewport width (widely used) --> The width visible in the screen.
+
+Our Pc screen is in 4th Quadrant of graph.
+
+margin --> Space between elements. 
+Padding --> Spacing inside the element.
+
+---------------------------------
+open code editor from cmd ---> code . 
+:: To select path in explorer press alt + d ::
+
+----------------------------------
+
+percentage take the value from the parent and if parent do not have height and width i.e, it is a div then the child height in percentage 
+is also 0.
+
+---------------------------------
+
+By defaut the margin is 8 px and maybe some padding is also available.
+so we write boiler plate to remove them and create a raw website.
+
+---------------------------------
+What border box exactly do is when we give padding or margin to a box their may chances of increasing and decreasing the 
+size of box so to fix the size of box we use border-sizing : border box.
+
+---------------------------------
+
+Positions
+
+Absolute Position --> Uplift the position of box in z axis so the place becomes vacant and other div can take that place.
+example - Think about a chair on the ground and we are lifting that chair to a certain height, upon lifting their is a gap between chair and 
+ground and in that gap other element can be placed.
+
+
+** when we put absolute to a child instead of considering its parent as parent its considering body as parent (entire webpage). So while using 
+percentage as height and weight we need to consider that.
+
+Relative Position --> Applies on parent. Tells its child about their parent, so when position absolute applies on child it 
+always be inside its parent instead of bypassing its parent. 

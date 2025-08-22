@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+}
+.family-partition {
+    height: 25%;
+    border: 1px solid black;
+    position: relative;
+}
+
+.profile-pic{
+    height: 7rem;
+    width: 7rem;
+    border-radius:50% ;
+    position: absolute;
+    left: 75vw;
+    top: 4vh;
+}
+
+.profile-pic img{
+    height: 100%;
+    width: 100%;
+    border-radius:50% ;
+    position: absolute;
+
+}
+
+p{
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    left: 10rem;
+    font-size: xx-large;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}

@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+.main{
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    height : 20rem;
+    width : 40rem;
+    background-color: black;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+.circle{
+    width: 10rem;
+    height:10rem;
+    border-radius:50% ;
+    background-color: yellow;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+}
+
+button{
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(220, 215, 215, 0.344) ;
+    text-decoration: double;
+}
+#ON {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%);
+
+}

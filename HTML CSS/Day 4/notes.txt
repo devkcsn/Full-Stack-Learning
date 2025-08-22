@@ -1,0 +1,22 @@
+Position :
+
+Fixed --> Like navbar it is fixed on webpage at the same position no matter how much you scroll. 
+
+--------------------------------------------------
+Flexbox :
+
+display : flex;
+
+make box flexible from vertical to horizontal.
+
+** justify-content: Always work on x axis. 
+
+** align-items : ALways works on y axis.
+
+** gap : also called cutter space. 
+
+-------------------------------------------------
+
+If position is used then display flex is not used.
+
+top: 50 %; and left 50% will not place the object in centre.

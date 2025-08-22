@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.box {
+    height: 30rem;
+    width: 80rem;
+    border-radius: 20px;
+    background-color: bisque;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+button {
+    height: 8rem;
+    width: 8rem;
+    background-color: rgb(216, 136, 136);
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 50%;
+    border: none;
+}
+
+.p {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    user-select: none;
+    /* Standard property */
+    -webkit-user-select: none;
+    /* Safari */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+}
+
+.child {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(255, 219, 112);
+    border-radius: 20px 0px 0px 0px;
+}
+
+.child1 {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(255, 219, 112);
+    border-radius: 0px 20px 0px 0px;
+    position: absolute;
+    left: 92.2%;
+    top: 0;
+}
+
+.child2 {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(255, 219, 112);
+    border-radius: 0px 00px 20px 0px;
+    position: absolute;
+    left: 92.2%;
+    top: 79.2%;
+}
+
+.child3 {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(255, 219, 112);
+    border-radius: 0px 0px 0px 20px;
+    position: absolute;
+    top: 79.2%;
+}
+
+.my-class{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-transform: uppercase;
+    text-size-adjust: xx-large;
+}
