@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Libertinus Keyboard", system-ui;
+  font-size: 37px;
+}
+:root {
+  --progress-bar-width: 200px;
+  --progress-bar-height: 200px;
+  --font-size: 1rem;
+}
+.nav {
+  height: 4rem;
+  background: blanchedalmond;
+  position: relative;
+}
+.h1 {
+  position: absolute;
+  top: 40%;
+  left: 38.5%;
+  font-size: 70px;
+  transform: translate(-50%, -50%);
+}
+.h11 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.left-box {
+  background: rgba(213, 166, 111, 0.537);
+  height: 65vh;
+  width: 65vw;
+  position: absolute;
+  top: 31%;
+  left: 17%;
+  border-radius: 30px;
+}
+.task-input {
+  height: 1.5rem;
+  width: 11rem;
+  position: absolute;
+  top: 27px;
+  left: 30px;
+  border-radius: 20px;
+  background: rgba(221, 229, 229, 0.873);
+  border: none;
+  padding: 9px;
+  font-size: x-large;
+}
+
+.submit-button {
+  height: 1.5rem;
+  width: 3rem;
+  border-radius: 20px;
+  border: none; 
+  position: absolute;
+  top: 27px;
+  left: 450px;
+  background-color: rgb(152, 230, 159);
+  font-size: xx-large;
+}
+.left-lower-box {
+  height: 8.5rem;
+  width: 14.3rem;
+  background: blanchedalmond;
+  position: absolute;
+  top: 107px;
+  left: 30px;
+  border-radius: 20px;
+}
+.circular-progress {
+  width: var(--progress-bar-width);
+  height: var(--progress-bar-height);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 4rem;
+  left: 18.3rem;
+  background: conic-gradient(#85d288 0deg, #f5f5dc 0deg);
+  border:none;
+}
+.inner-circle {
+  position: absolute;
+  width: calc(var(--progress-bar-width) - 30px);
+  height: calc(var(--progress-bar-height) - 30px);
+  border-radius: 50%;
+}
+
+.percentage {
+  position: relative;
+  font-size: var(--font-size);
+  color: #88c28b;
+  font-weight: bold;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.reset-button{
+    height: 1.6rem;
+    width: 4rem;
+    background: rgb(210, 61, 61);
+    position: absolute;
+    top: 82%;
+    left: 19rem;
+    border-radius: 20px;
+    border: none;
+}
+.reset-button:hover {
+    background: rgb(232, 107, 107);
+}
+.submit-button:hover{
+    background: rgb(123, 195, 123);
+}
+/* Calendar area */
+.calendar-area {
+  position: absolute;
+  left: 23rem; /* keeps it to the left of the submit button area */
+  top: 6.2rem; /* above percentage button */
+  width: 10.5rem; /* align with left-lower-box width */
+  background: #fff6e8;
+  border-radius: 16px;
+  padding: 10px 8px;
+  border: 1px solid rgba(210, 180, 140, 0.35);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.06);
+}
+
+.calendar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.calendar-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #5b4636;
+}
+
+.cal-nav {
+  border: none;
+  background: transparent;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #5b4636;
+}
+.cal-nav:hover { background: #ffe8c7; }
+
+.calendar-strip {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+}
+
+.cal-day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 4px;
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid rgba(210, 180, 140, 0.25);
+  cursor: pointer;
+}
+.cal-day:hover { background: #fff2d9; }
+.cal-day .dow { font-size: 10px; color: #7a5c48; }
+.cal-day .dom { font-size: 14px; font-weight: 700; color: #4a3a2d; }
+.cal-day .month { font-size: 10px; color: #8b6b55; }
+.cal-day.selected { outline: 2px solid #98e69f; outline-offset: 1px; }
+.cal-day.today { border-color: #85d288; }
+
+/* Per-day habit checkmark color accent */
+.habit-checkbox { accent-color: #2e7d32; }
+ul {
+  list-style-type: none;
+  padding: 10px;
+  margin: 0;
+  height: 100%;
+  overflow-y: auto;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.habit-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.8);
+  margin: 8px 0;
+  padding: 12px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+  font-size: 16px;
+  border: 1px solid rgba(210, 180, 140, 0.3);
+}
+
+.habit-item:hover {
+  background: rgba(255, 255, 255, 0.95);
+  transform: translateY(-1px);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.habit-text {
+  flex: 1;
+  margin-left: 10px;
+  color: #333;
+  font-weight: 500;
+}
+
+.habit-checkbox {
+  width: 18px;
+  height: 18px;
+  accent-color: #98e69f;
+  cursor: pointer;
+}
+
+.delete-btn {
+  background: #ff6b6b;
+  color: white;
+  border: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease;
+}
+
+.delete-btn:hover {
+  background: #ff5252;
+  transform: scale(1.1);
+}
