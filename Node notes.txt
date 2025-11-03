@@ -1,0 +1,12 @@
+All types of module 
+
+Core module 
+Local module 
+npm module 
+
+
+
+require - it is a method that import module into note js. 
+
+fs - file system (write, read , delete, update .. etc)
+
