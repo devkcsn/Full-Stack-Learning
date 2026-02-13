@@ -1,0 +1,14 @@
+.col-lg{
+    border: 2px solid green;
+}
+.col-md{
+    border: 2px solid black;
+}
+
+.col{
+    border: 0px;
+}
+
+.row{
+    border:2px solid blue
+}

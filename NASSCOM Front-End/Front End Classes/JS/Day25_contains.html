@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day25_Js_contains</title>
+</head>
+<body>
+
+    <!-- <div id="test">Sexy Boy
+        <div id="abc">hello</div>
+    </div> -->
+
+    <div id="test" class="test"></div>
+
+    <script>
+        // var parentElement = document.getElementById("test");
+        // var target = document.getElementById("abc");
+
+        // var find = parentElement.contains(target);
+
+        var target = document.getElementById("test");
+
+        var find = target.hasAttribute("class");
+
+        console.log(find);
+
+        var target = document.getElementById("test");
+
+        var find = target.hasChildNodes();
+
+        console.log(find);
+    </script>
+</body>
+</html>

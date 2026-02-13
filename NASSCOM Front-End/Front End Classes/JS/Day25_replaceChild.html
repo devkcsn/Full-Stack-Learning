@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day25_replaceChild</title>
+</head>
+<body>
+    <ul id="list">
+        <li>Orange</li>
+        <li>Apple</li>
+        <li>Grapes</li>
+        <li>Banana</li>
+    </ul>
+
+    <script>
+        //To Replace
+        var newElemet = document.createElement("li") ; 
+        var newtext = document.createTextNode("Wow next Text") ; 
+
+        newElemet.appendChild(newtext) ; 
+
+        var target = document.getElementById("list");
+        var oldElement = target.children[0];
+
+        target.replaceChild(newElemet,oldElement) ; 
+
+        //To remove
+        
+        var target = document.getElementById("list");
+        var oldElement = target.children[0];
+
+        target.removeChild(oldElement);
+
+
+    </script>
+</body>
+</html>

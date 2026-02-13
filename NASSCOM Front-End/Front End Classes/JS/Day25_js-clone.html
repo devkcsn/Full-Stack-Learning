@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day25_Clone</title>
+</head>
+<body>
+    <ul id="list1">
+        <li>Orange</li>
+        <li>Apple</li>
+        <li>Grapes</li>
+        <li>Banana</li>
+    </ul>
+
+    <ul id="list2">
+        <li>Carrot</li>
+        <li>Reddish</li>
+    </ul>
+
+    <script>
+        var target = document.getElementById("list1").children[0];
+        var copyElement = target.cloneNode(true);
+
+
+        console.log(copyElement) ; 
+
+
+        var target = document.getElementById("list1").children[0];
+        var copyElement = target.cloneNode(false);
+
+
+        console.log(copyElement);
+    </script>
+</body>
+</html>

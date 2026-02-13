@@ -1,0 +1,11 @@
+.container{
+    border: 2px solid black;
+}
+
+.row{
+    border: 1px  solid yellowgreen;
+}
+.col{
+    border: 2px solid mediumaquamarine;
+    background-color: bisque;
+}

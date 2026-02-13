@@ -1,0 +1,30 @@
+.container{
+    background: #eee;
+    margin: 50px;
+    padding: 10px;
+    border: 3px solid #000;
+    height: 400px;
+    width: 400px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+}
+
+.items{
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center ;
+    padding: 10px;
+    margin: 5px;
+}
+
+.item1{background: orangered;}
+.item2{background: yellowgreen; height: 100px;}
+.item3{background: mediumpurple;}
+.item4{background: hotpink;}    
+.item5{background: rgb(202, 208, 37); height:50px ;}  
+.item6{background: rgb(9, 26, 91);}  
+.item7{background: rgb(50, 234, 173);}  
+.item8{background: rgb(142, 149, 226);}  

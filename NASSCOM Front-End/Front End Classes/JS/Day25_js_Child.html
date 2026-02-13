@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inherit</title>
+</head>
+<body>
+    <div id="outer">
+        <h2>Outer</h2>
+        <div id="inner">
+            <h2>Inner</h2>
+            <div>A</div>
+            <div>B</div>
+            <div id="Child-C">C</div>
+            <div>D</div>
+            <div>E</div>
+        </div>
+    </div>
+    
+    <script>
+        var a = document.getElementById("inner").parentElement;
+
+        var b = document.getElementById("inner").parentElement.style.background = "red" ;
+
+        var c = document.getElementById("Child-C").parentNode ; 
+
+        var d = document.getElementById("Child-C").nextElementSibling ;
+
+        var e = document.getElementById("Child-C").previousElementSibling ; 
+
+    </script>
+</body>
+</html>

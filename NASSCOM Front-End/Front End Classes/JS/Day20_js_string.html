@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day20_js_string</title>
+</head>
+<body>
+    <script>
+        var str = "Javascript is a Great Language";
+
+        // Display the length of the string
+        document.write("Length of the string: " + str.length + "<br>");
+        
+        // Convert the string to uppercase and display
+        var uppercase = str.toUpperCase();
+        document.write("Uppercase: " + uppercase + "<br>");
+        
+        // Convert the uppercase string to lowercase and display
+        var lowercase = uppercase.toLowerCase();
+        document.write("Lowercase: " + lowercase + "<br>");
+        
+        // Check if the lowercase string starts with 'j'
+        var startsWith = lowercase.startsWith('j');
+        document.write("Starts With 'j': " + startsWith + "<br>");
+        
+        // Search for the position of the substring "is"
+        var searchResult = lowercase.search("is");
+        document.write("Position of 'is': " + searchResult + "<br>");
+
+        var str = "This is a sample string with some matches.";
+        var pattern = /is/g;
+        var match = str.match(pattern);
+        document.write(match + "<br>");
+        
+        var trim = str.trim();
+        document.write(trim + "<br>");
+
+        var str = "Javascript is a Great Language";
+        var a = str.charCodeAt(0);
+        document.write(a + "<br>");
+
+        var b = String.fromCharCode(65);
+        document.write(b + "<br>");
+
+        var c = str.concat("  " + a + "  ",b + "  " + "<br>");
+        document.write(c);
+
+        var d = str.split(" ");
+        document.write(d + "<br>");
+        document.write(typeof(d) + "<br>");
+
+        var e = str.repeat(8);
+        document.write(e + "<br>");
+
+        var f = str.slice(3,10);
+        document.write(f + "<br>");
+
+        var g = str.substr(2,5);
+        document.write(g +"<br>");
+
+        var h = str.substring(3,5);
+        document.write(h + "<br>s");
+
+
+
+
+    </script>
+</body>
+</html>

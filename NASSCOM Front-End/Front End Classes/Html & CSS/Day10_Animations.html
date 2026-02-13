@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day10_Animation</title>
+    <style>
+
+        section{
+            width: 300px;
+            height: 170px;
+            background-color: #947550;
+
+            position: relative;
+
+            overflow-x: hidden; 
+        }     #img1{
+            height: 100%;
+        }
+
+   
+        #img2{
+            margin-left: 80px;
+        }
+        
+        img{
+            width: 200px;
+            height: auto;
+
+            bottom: 0;
+            position: absolute;
+
+            animation-name: example;
+            animation-duration: 6s;
+
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+
+            animation-delay: 2s;
+        }
+
+        @keyframes example {
+            0%{
+                left: 0;
+            }
+            50%{ 
+                left:40%
+            }
+            100%{
+                left: 90%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+    <img id="img1" src="giphy.gif" alt="">
+   <img id="img2" src="spider-man-spoder-man.gif" alt="">
+</section>
+</body>
+</html>

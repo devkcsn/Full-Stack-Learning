@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day26_js5</title>
+</head>
+<body>
+    <input type=" text" id="myinput">
+    <script>
+        document.querySelector("#myinput").addEventListener('keydown' , function(e){
+            console.clear();
+
+            var text = "You Pressed Button : " + e.key;
+
+            console.log(text);
+
+            var left = 0;
+            var up = 0;
+
+            document.querySelector("body").addEventListener('keydown' , function(e) {
+                console.clear();             
+            
+            })
+            
+        })
+
+                switch (e.key) {
+                    case "ArrowRight": 
+                    left = left + 5 ; 
+                    break;
+                    case "ArrowLeft": 
+                    left = left - 5 ; 
+                    break;
+                    case "ArrowDown": 
+                    up = up + 5 ; 
+                    break;
+                    case "ArrowUp": 
+                    up = up - 5 ; 
+                    break;
+                    default:
+                    console.log("Other Key pressed. ");
+                    break;
+                }
+
+    </script>
+</body>
+</html>

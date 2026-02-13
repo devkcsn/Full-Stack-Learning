@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day25_Create Element</title>
+</head>
+<body>
+    <div id="test"></div>
+    <script>
+        var newElement = document.createElement("h2") ; 
+        var newText  = document.createTextNode("This is just a text") ; 
+        var newComment = document.createComment("This is comment") ; 
+        newElement.appendChild(newText) ;
+
+        document.getElementById("test").appendChild(newElement);
+        document.getElementById("test").appendChild(newComment);
+
+        var target = document.getElementById("test");
+        target.insertBefore(newElement,target.childNodes[0]);
+        
+        var target = document.getElementById("test") ; 
+
+        var newElement = "<h2> This is Heading </h2>" ; 
+
+        target.insertAdjacentHTML("afterbegin" , ewElement) ;
+     </script>
+</body>
+</html>

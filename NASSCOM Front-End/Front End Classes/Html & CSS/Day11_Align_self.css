@@ -1,0 +1,31 @@
+/* It also contain "Order" , "Flex-grow" , "Felx-basis" and "Flex-shrink" all are properties of display flex */
+.container{
+    background: #eee;
+    margin: 50px;
+    padding: 10px;
+    border: 3px solid #000;
+    height: 400px;
+
+    display: flex;
+    align-self:safe;
+    /* flex-grow: 1;  */
+}
+
+.items{
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center ;
+    padding: 10px;
+    margin: 5px;
+    width: 100px;
+}
+
+.item1{background: orangered; order: 2;}
+.item2{background: yellowgreen;flex-grow: 2;}
+.item3{background: mediumpurple; order: -1;}
+.item4{background: hotpink;flex-basis:  200px;} 
+.item5{background: rgb(202, 208, 37); order: 1;}  
+.item6{background: rgb(9, 26, 91);flex-grow: 8;} 
+.item7{background: rgb(50, 234, 173);flex-shrink: 900;}  
+.item8{background: rgb(142, 149, 226);}  
