@@ -1,3 +1,89 @@
+/* Responsive styles */
+@media (max-width: 900px) {
+  html, body {
+    font-size: 24px;
+  }
+  .left-box {
+    width: 90vw;
+    left: 5%;
+    top: 25%;
+  }
+  .calendar-area {
+    left: 2rem;
+    top: 30rem;
+    width: 90vw;
+    min-width: 220px;
+  }
+  .h1 {
+    font-size: 40px;
+    left: 50%;
+    top: 30%;
+  }
+}
+
+@media (max-width: 600px) {
+  html, body {
+    font-size: 16px;
+    padding: 0 2vw;
+  }
+  .left-box {
+    width: 98vw;
+    left: 1vw;
+    top: 18%;
+    min-width: unset;
+    height: auto;
+    border-radius: 16px;
+  }
+  .task-input, .submit-button {
+    position: static;
+    width: 90vw;
+    margin: 8px 0;
+    font-size: 1em;
+  }
+  .left-lower-box {
+    position: static;
+    width: 95vw;
+    margin: 10px 0;
+    height: auto;
+  }
+  .calendar-area {
+    position: static;
+    width: 98vw;
+    margin: 10px 0;
+    min-width: unset;
+    box-sizing: border-box;
+  }
+  .circular-progress {
+    position: static;
+    width: 140px;
+    height: 140px;
+    margin: 10px auto;
+    left: unset;
+    top: unset;
+  }
+  .reset-button {
+    position: static;
+    width: 90vw;
+    margin: 10px 0;
+    font-size: 1em;
+  }
+  .h1 {
+    font-size: 1.5em;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, 0);
+  }
+  .habit-item {
+    font-size: 1em;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .habit-checkbox, .delete-btn {
+    width: 24px;
+    height: 24px;
+    font-size: 1.2em;
+  }
+}
 * {
   margin: 0;
   padding: 0;

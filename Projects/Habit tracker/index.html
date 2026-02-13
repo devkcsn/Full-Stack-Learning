@@ -20,15 +20,30 @@
     <nav class="nav">
       <h1 class="h1" class="font-effect-anaglyph">T</h1>
       <h1 class="h11">rack Mate.</h1>
-      <span style="font-family: serif ; font-weight:bolder; font-size: x-large; position: absolute; left: 18rem; top: 2.8rem; font-style: italic;" >Turning guilt into graphs since today.</span>
+      <span
+        style="
+          font-family: serif;
+          font-weight: bolder;
+          font-size: x-large;
+          position: absolute;
+          left: 18rem;
+          top: 2.8rem;
+          font-style: italic;
+        "
+        >Turning guilt into graphs since today.</span
+      >
     </nav>
     <div class="container">
       <div class="left-box">
         <div class="left-upper-box">
-          <input type="text" class="task-input" placeholder="What do you want to track?....." />
+          <input
+            type="text"
+            class="task-input"
+            placeholder="What do you want to track?....."
+          />
           <button class="submit-button">+</button>
         </div>
-        
+
         <div class="left-lower-box">
           <ul id="taskList"></ul>
         </div>
@@ -40,19 +55,55 @@
           data-bg-color="black"
         >
           <div class="inner-circle"></div>
-          <p class="percentage" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">0%</p>
+          <p
+            class="percentage"
+            style="
+              font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+                'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            "
+          >
+            0%
+          </p>
         </div>
-        <button class="reset-button" style="font-family: 'Times New Roman', Times, serif;font-size: large;">Reset All</button>
+        <button
+          class="reset-button"
+          style="font-family: 'Times New Roman', Times, serif; font-size: large"
+        >
+          Reset All
+        </button>
       </div>
       <!-- Horizontal calendar: left of submit button and above the percentage -->
-        <div class="calendar-area">
-          <div class="calendar-header">
-            <button class="cal-nav prev" title="Previous days"><i class="ri-arrow-left-s-line"></i></button>
-            <div class="calendar-title"><span id="selectedDateLabel"></span></div>
-            <button class="cal-nav next" title="Next days"><i class="ri-arrow-right-s-line"></i></button>
+      <div
+        class="calendar-area"
+        style="font-family: Arial, Helvetica, sans-serif"
+      >
+        <div
+          class="calendar-header"
+          style="font-family: Arial, Helvetica, sans-serif"
+        >
+          <button
+            class="cal-nav prev"
+            title="Previous days"
+            style="font-family: Arial, Helvetica, sans-serif"
+          >
+            <i class="ri-arrow-left-s-line"></i>
+          </button>
+          <div
+            class="calendar-title"
+            style="font-family: Arial, Helvetica, sans-serif"
+          >
+            <span id="selectedDateLabel"></span>
           </div>
-          <div id="calendarStrip" class="calendar-strip"></div>
+          <button class="cal-nav next" title="Next days">
+            <i class="ri-arrow-right-s-line"></i>
+          </button>
         </div>
+        <div
+          id="calendarStrip"
+          class="calendar-strip"
+          style="font-family: Arial, Helvetica, sans-serif"
+        ></div>
+      </div>
     </div>
     <script src="script.js"></script>
   </body>

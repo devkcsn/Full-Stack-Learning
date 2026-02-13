@@ -46,24 +46,9 @@ let state = {
     habits: []
 };
 
-// Migration: legacy habits [{text, completed}] -> new format
-function migrate(habits) {
-    const isLegacy = Array.isArray(habits) && habits.some(h => h && 'completed' in h && !('progress' in h));
-    if (!isLegacy) return habits;
-    const t = toYMD(new Date());
-    return habits.map((h, idx) => ({
-        id: `h_${Date.now()}_${idx}`,
-        text: h.text || 'Habit',
-        startDate: t,
-        durationDays: 1,
-        progress: { [t]: !!h.completed }
-    }));
-}
-
+// Load habits in new format only
 function loadState() {
-    const raw = getHabits();
-    state.habits = migrate(raw);
-    saveHabits(state.habits); // persist migrated
+    state.habits = getHabits();
 }
 
 // Calendar rendering
